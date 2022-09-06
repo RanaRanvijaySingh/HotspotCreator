@@ -1,9 +1,11 @@
-package com.simple.hotspotcreator
+package com.simple.hotspotcreator.viewmodels
 
 import android.os.Build
 import androidx.annotation.RequiresApi
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
+import com.simple.hotspotcreator.utils.Constants
+import com.simple.hotspotcreator.utils.HotspotHandler
 import javax.inject.Inject
 
 class HomeViewModel @Inject constructor() : ViewModel(), HomeContract,

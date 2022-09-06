@@ -1,4 +1,4 @@
-package com.simple.hotspotcreator
+package com.simple.hotspotcreator.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -9,10 +9,12 @@ import android.content.Intent
 import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.ViewModelProviders
 import com.google.android.gms.location.*
+import com.simple.hotspotcreator.MyApplication
 import com.simple.hotspotcreator.databinding.ActivityMainBinding
+import com.simple.hotspotcreator.utils.Constants
+import com.simple.hotspotcreator.utils.HotspotHandler
+import com.simple.hotspotcreator.viewmodels.HomeViewModel
 import javax.inject.Inject
-
-const val REQUEST_PERMISSION_LOCATION = 111
 
 class HomeActivity : AppCompatActivity() {
 
@@ -67,7 +69,7 @@ class HomeActivity : AppCompatActivity() {
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         super.onActivityResult(requestCode, resultCode, data)
         val states = LocationSettingsStates.fromIntent(data)
-        if (requestCode == REQUEST_PERMISSION_LOCATION) {
+        if (requestCode == Constants.REQUEST_PERMISSION_LOCATION) {
             when (resultCode) {
                 RESULT_OK -> viewModel.updateHotspotStatus(hotspotHandler)
                 RESULT_CANCELED -> viewModel.handleCancelPermission()

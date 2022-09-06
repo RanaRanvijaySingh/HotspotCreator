@@ -1,4 +1,6 @@
-package com.simple.hotspotcreator
+package com.simple.hotspotcreator.viewmodels
+
+import com.simple.hotspotcreator.utils.HotspotHandler
 
 interface HomeContract {
     fun handleHotspotButtonClick(hotspotHandler: HotspotHandler)

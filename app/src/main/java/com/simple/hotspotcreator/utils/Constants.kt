@@ -1,4 +1,4 @@
-package com.simple.hotspotcreator
+package com.simple.hotspotcreator.utils
 
 object Constants {
     const val START_HOTSPOT = "Start hotspot"
@@ -9,4 +9,5 @@ object Constants {
     const val HOTSPOT_ERROR_MESSAGE = "Unable to start hotspot. Please try again."
     const val HOTSPOT_CREATED_MESSAGE = "Hotspot created successfully."
     const val GOTO_SETTINGS = "Grant location permission from settings"
+    const val REQUEST_PERMISSION_LOCATION = 111
 }

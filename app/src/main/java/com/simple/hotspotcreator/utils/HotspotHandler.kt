@@ -1,4 +1,4 @@
-package com.simple.hotspotcreator
+package com.simple.hotspotcreator.utils
 
 import android.Manifest
 import android.content.pm.PackageManager
@@ -44,7 +44,7 @@ class HotspotHandler @Inject constructor(private val activity: AppCompatActivity
                         val resolvable = exception as ResolvableApiException
                         resolvable.startResolutionForResult(
                             activity,
-                            REQUEST_PERMISSION_LOCATION
+                            Constants.REQUEST_PERMISSION_LOCATION
                         )
                     } catch (e: Exception) {
                         callback.showGotoSettingsMessage()

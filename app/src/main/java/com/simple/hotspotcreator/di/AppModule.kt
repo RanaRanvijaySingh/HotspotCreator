@@ -1,6 +1,7 @@
-package com.simple.hotspotcreator
+package com.simple.hotspotcreator.di
 
 import android.content.Context
+import com.simple.hotspotcreator.MyApplication
 import dagger.Module
 import dagger.Provides
 import javax.inject.Singleton

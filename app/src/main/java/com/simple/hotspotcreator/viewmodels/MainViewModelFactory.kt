@@ -2,6 +2,7 @@ package com.simple.hotspotcreator
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
+import com.simple.hotspotcreator.viewmodels.HomeViewModel
 import dagger.Binds
 import dagger.MapKey
 import dagger.Module
