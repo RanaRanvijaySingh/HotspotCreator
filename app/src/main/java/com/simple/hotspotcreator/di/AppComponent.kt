@@ -1,6 +1,6 @@
 package com.simple.hotspotcreator.di
 
-import com.simple.hotspotcreator.ViewModelModule
+import com.simple.hotspotcreator.viewmodels.ViewModelModule
 import com.simple.hotspotcreator.ui.HomeActivity
 import dagger.Component
 import javax.inject.Singleton
