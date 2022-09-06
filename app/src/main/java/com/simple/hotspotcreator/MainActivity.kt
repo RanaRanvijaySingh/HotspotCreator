@@ -32,7 +32,7 @@ class MainActivity : AppCompatActivity(), ActivityCompat.OnRequestPermissionsRes
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        binding.buttonCreateHotspot.setOnClickListener {
+        binding.bCreateHotspot.setOnClickListener {
 //            Toast.makeText(this, "Clicked", Toast.LENGTH_SHORT).show()
 //            requestCameraPermission()
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
